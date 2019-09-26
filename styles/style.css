@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+}
+
+.bs-desk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bs-desk-item {
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bs-desk-item_macbook {
+  top: 130px;
+  left: 75px;
+  transform: rotate(-40deg);
+  width: 500px;
+  height: 500px;
+  background-image: url('../images/macbook.png');
+}
+
+.bs-desk-item_earphones {
+  top: 70px;
+  left: 500px;
+  transform: rotate(-15deg) scaleX(-1);
+  width: 250px;
+  height: 250px;
+  background-image: url('../images/earphones.png');
+}
+
+.bs-desk-item_notebook {
+  top: 75px;
+  right: 250px;
+  transform: rotate(30deg);
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/notebook.png');
+}
+
+.bs-desk-item_pizza {
+  top: 350px;
+  right: 180px;
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/pizza.png');
+}
+
+.bs-desk-item_postit {
+  top: 50px;
+  right: 550px;
+  transform: rotate(15deg);
+  width: 170px;
+  height: 170px;
+  background-image: url('../images/postit.png');
+}
+
+.bs-hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #904e95, #e96443);
+}
+
+.bs-hero-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 3em;
+  color: white;
+}
+
+.bs-footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'Mansalva', cursive;
+  font-size: 1.5em;
+  color: black;
+}
