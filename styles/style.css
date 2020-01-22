@@ -1,12 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,13 +16,16 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, #904e95, #e96443);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .bs-card {
   position: relative;
   background-color: white;
-  padding: 0px 30px 15px 30px;
+  padding: 0px 30px;
   border-radius: 10px;
+  width: 500px;
 }
 
 .bs-profile-picture {
@@ -39,7 +44,34 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+.bs-name {
+  position: relative;
+  top: -100px;
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 1.5;
+}
+
+.bs-location {
+  position: relative;
+  top: -110px;
+  text-align: center;
+  color: #a0a2a4;
+  font-size: 1em;
+}
+
+.bs-bio {
+  position: relative;
+  top: -90px;
+  text-align: center;
+  color: #a0a2a4;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
 .bs-social-icons {
+  position: relative;
+  top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,39 +86,41 @@ body {
   border-radius: 50%;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #a0a2a4;
+  transition: background 0.3s ease;
 }
 
-.bs-social-icon-github {
-  background-color: #181717;
+.bs-social-icon-github:hover {
+  background: #181717;
 }
 
 .bs-social-icon-github > svg {
-  width: 36px;
-  height: 36px;
-  fill: white;
-}
-
-.bs-social-icon-twitter {
-  background-color: #1DA1F2;
-}
-
-.bs-social-icon-twitter > svg {
   width: 32px;
   height: 32px;
   fill: white;
 }
 
-.bs-social-icon-linkedin {
-  background-color: #0077B5;
+.bs-social-icon-twitter:hover {
+  background: #1DA1F2;
 }
 
-.bs-social-icon-linkedin > svg {
-  width: 28px;
-  height: 28px;
+.bs-social-icon-twitter > svg {
+  width: 30px;
+  height: 30px;
   fill: white;
 }
 
-.bs-social-icon-instagram {
+.bs-social-icon-linkedin:hover {
+  background: #0077B5;
+}
+
+.bs-social-icon-linkedin > svg {
+  width: 26px;
+  height: 26px;
+  fill: white;
+}
+
+.bs-social-icon-instagram:hover {
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 
@@ -96,8 +130,8 @@ body {
   fill: white;
 }
 
-.bs-social-icon-email {
-  background-color: #D14836;
+.bs-social-icon-email:hover {
+  background: #D14836;
 }
 
 .bs-social-icon-email > svg {
