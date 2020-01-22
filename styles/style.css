@@ -26,6 +26,7 @@ body {
   padding: 0px 30px;
   border-radius: 10px;
   width: 500px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .bs-profile-picture {
@@ -41,7 +42,7 @@ body {
   background-repeat: no-repeat;
   background-image: url('../images/profile-picture.jpg');
   background-color: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .bs-name {
@@ -49,7 +50,7 @@ body {
   top: -100px;
   text-align: center;
   color: #6b6b6b;
-  font-size: 1.5;
+  font-size: 2.5em;
 }
 
 .bs-location {
@@ -89,7 +90,7 @@ body {
   align-items: center;
   border-radius: 50%;
   margin: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background: #a0a2a4;
   transition: background 0.3s ease;
 }
