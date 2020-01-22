@@ -77,6 +77,10 @@ body {
   align-items: center;
 }
 
+.bs-social-icons > a {
+  cursor: default;
+}
+
 .bs-social-icon {
   width: 50px;
   height: 50px;
@@ -90,11 +94,15 @@ body {
   transition: background 0.3s ease;
 }
 
+.bs-social-icon:hover {
+  cursor: pointer;
+}
+
 .bs-social-icon-github:hover {
   background: #181717;
 }
 
-.bs-social-icon-github > svg {
+.bs-social-icon-github svg {
   width: 32px;
   height: 32px;
   fill: white;
@@ -104,7 +112,7 @@ body {
   background: #1DA1F2;
 }
 
-.bs-social-icon-twitter > svg {
+.bs-social-icon-twitter svg {
   width: 30px;
   height: 30px;
   fill: white;
@@ -114,7 +122,7 @@ body {
   background: #0077B5;
 }
 
-.bs-social-icon-linkedin > svg {
+.bs-social-icon-linkedin svg {
   width: 26px;
   height: 26px;
   fill: white;
@@ -124,7 +132,7 @@ body {
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 
-.bs-social-icon-instagram > svg {
+.bs-social-icon-instagram svg {
   width: 30px;
   height: 30px;
   fill: white;
@@ -134,7 +142,7 @@ body {
   background: #D14836;
 }
 
-.bs-social-icon-email > svg {
+.bs-social-icon-email svg {
   width: 30px;
   height: 30px;
   fill: white;
