@@ -18,6 +18,10 @@ body {
   font-weight: 300;
 }
 
+.bs-profile-card-container {
+  padding: 150px 0 0 0;
+}
+
 .bs-card {
   position: relative;
   background-color: white;
@@ -34,7 +38,7 @@ body {
   top: -100px;
   width: 200px;
   height: 200px;
-  margin: 150px auto 0 auto;
+  margin: 0 auto;
   border-radius: 50%;
   border: 5px solid white;
   background-color: white;
