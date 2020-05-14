@@ -1,3 +1,14 @@
+:root {
+  --bg-gradient-from: #3CD3AD;
+  --bg-gradient-to: #4CB8C4;
+  --github: #181717;
+  --twitter: #1DA1F2;
+  --linkedin: #0077B5;
+  --instagram: red;
+  --gmail: #D14836;
+
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -13,13 +24,13 @@ html {
 }
 
 body {
-  background: linear-gradient(to left, #904e95, #e96443);
+  background: linear-gradient(to right, var(--bg-gradient-from), var(--bg-gradient-to));
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
 .bs-profile-card-container {
-  padding: 150px 0 0 0;
+  padding: 150px 15px 15px 15px;
 }
 
 .bs-card {
@@ -90,61 +101,55 @@ body {
   align-items: center;
   border-radius: 50%;
   margin: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  background: #a0a2a4;
-  transition: background 0.3s ease;
-}
-
-.bs-social-icon:hover {
   cursor: pointer;
 }
 
-.bs-social-icon-github:hover {
-  background: #181717;
+.bs-social-icon svg {
+  fill: #a0a2a4;
+  transition: fill 0.3s ease;
 }
 
 .bs-social-icon-github svg {
   width: 32px;
   height: 32px;
-  fill: white;
 }
 
-.bs-social-icon-twitter:hover {
-  background: #1DA1F2;
+.bs-social-icon-github:hover svg {
+ fill: var(--github);
 }
 
 .bs-social-icon-twitter svg {
   width: 30px;
   height: 30px;
-  fill: white;
 }
 
-.bs-social-icon-linkedin:hover {
-  background: #0077B5;
+.bs-social-icon-twitter:hover svg {
+  fill: var(--twitter);
 }
 
 .bs-social-icon-linkedin svg {
   width: 26px;
   height: 26px;
-  fill: white;
 }
 
-.bs-social-icon-instagram:hover {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+.bs-social-icon-linkedin:hover svg {
+  fill: var(--linkedin);
 }
 
 .bs-social-icon-instagram svg {
   width: 30px;
   height: 30px;
-  fill: white;
 }
 
-.bs-social-icon-email:hover {
-  background: #D14836;
+.bs-social-icon-instagram:hover svg {
+  fill: var(--instagram);
 }
 
 .bs-social-icon-email svg {
   width: 30px;
   height: 30px;
-  fill: white;
+}
+
+.bs-social-icon-email:hover svg {
+  fill: var(--gmail);
 }
