@@ -1,5 +1,6 @@
 :root {
-  --font-color: #a0a2a4;
+  --font-color: #7b7b7b;
+  --card-bg-color: white;
   --social-icon-size: 30px;
   --github: #181717;
   --twitter: #1DA1F2;
@@ -12,20 +13,15 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-}
-
-html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: var(--font-color);
+  background: linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  background: linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
 }
 
 .bs-profile-card-container {
@@ -34,8 +30,8 @@ body {
 
 .bs-card {
   position: relative;
-  background-color: white;
-  padding: 0px 30px;
+  background-color: var(--card-bg-color);
+  padding: 0px 40px;
   margin: 0 auto;
   border-radius: 10px;
   max-width: 500px;
@@ -50,8 +46,8 @@ body {
   height: 200px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 5px solid white;
-  background-color: white;
+  border: 5px solid var(--card-bg-color);
+  background-color: var(--card-bg-color);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -59,15 +55,13 @@ body {
   position: relative;
   top: -100px;
   text-align: center;
-  color: #6b6b6b;
-  font-size: 2.5em;
+  font-size: 2.7em;
 }
 
 .bs-location {
   position: relative;
   top: -110px;
   text-align: center;
-  color: var(--font-color);
   font-size: 1em;
 }
 
@@ -75,7 +69,6 @@ body {
   position: relative;
   top: -90px;
   text-align: center;
-  color: var(--font-color);
   font-size: 1.2em;
   line-height: 1.7em;
 }
