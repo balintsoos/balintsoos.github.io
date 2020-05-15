@@ -1,6 +1,4 @@
 :root {
-  --bg-gradient-from: #3CD3AD;
-  --bg-gradient-to: #4CB8C4;
   --font-color: #a0a2a4;
   --social-icon-size: 30px;
   --github: #181717;
@@ -25,9 +23,9 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, var(--bg-gradient-from), var(--bg-gradient-to));
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  background: linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
 }
 
 .bs-profile-card-container {
