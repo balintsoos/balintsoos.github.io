@@ -1,7 +1,8 @@
 :root {
-  --font-color: #7b7b7b;
+  --font-color: #101325;
   --card-bg-color: white;
   --social-icon-size: 30px;
+  --social-icon-color: #1013258a;
   --github: #181717;
   --twitter: #1DA1F2;
   --linkedin: #0077B5;
@@ -88,7 +89,7 @@ html, body {
 .bs-social-icon svg {
   width: var(--social-icon-size);
   height: var(--social-icon-size);
-  fill: var(--font-color);
+  fill: var(--social-icon-color);
   transition: fill 0.3s ease;
 }
 
